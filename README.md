@@ -84,7 +84,7 @@ The following corrections were made based on Part 1 feedback:
 - **Forms:** Full-width inputs on mobile.
 
 ### 4. Screenshots of Responsive Design
-*(Paste your screenshots here – desktop, tablet, and mobile views)*
+
 
 **Desktop View**  
 <img width="536" height="468" alt="image" src="https://github.com/user-attachments/assets/49e69847-9733-4d2b-8d50-b24f1b21177a" />
