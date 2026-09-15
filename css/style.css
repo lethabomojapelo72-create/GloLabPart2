@@ -1,0 +1,267 @@
+/* GlowLab Beauty basic styling */
+
+/* Reset default margins and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles: font, background color, and text color */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #faf8f5;
+    color: #333;
+}
+
+/* Header styles: background, layout, and spacing */
+header {
+    background-color: #e8e4db;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Navigation styles: horizontal layout with spacing */
+nav {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Navigation link styles */
+nav a {
+    text-decoration: none;
+    color: #4a4a4a;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+/* Navigation link hover effect */
+nav a:hover {
+    background-color: #d4cfc4;
+    border-radius: 3px;
+}
+
+/* Main content container */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Heading styles */
+h1, h2, h3, h4 {
+    color: #2c2c2c;
+    margin-bottom: 10px;
+}
+
+/* Paragraph spacing */
+p {
+    margin-bottom: 15px;
+}
+
+/* Image styles: responsive and rounded corners */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Hero section styling */
+.hero {
+    background-color: #e8e4db;
+    padding: 40px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+/* Call to action button */
+.cta-button {
+    display: inline-block;
+    background-color: #7a8b6f;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+/* Button hover effect */
+.cta-button:hover {
+    background-color: #5f6b56;
+}
+
+/* Product grid and catalog layout */
+.product-grid, .product-catalog {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Product card styling */
+.product-card, .product-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+/* Product item width */
+.product-item {
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Product image spacing */
+.product-item img, .product-card img {
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Form styling */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Form group spacing */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Label styling */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Input, select, and textarea styling */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Button styling */
+button {
+    background-color: #7a8b6f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #5f6b56;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #e8e4db;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+/* Footer link styling */
+footer a {
+    color: #4a4a4a;
+    text-decoration: underline;
+}
+
+/* Footer link hover */
+footer a:hover {
+    color: #7a8b6f;
+}
+
+/* Unordered list styling */
+ul {
+    list-style-position: inside;
+    margin-bottom: 20px;
+}
+
+/* Location container spacing */
+.location {
+    margin-bottom: 20px;
+}
+
+/* iframe styling for maps */
+iframe {
+    width: 100%;
+    max-width: 600px;
+    border: 0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Quick about section */
+.quick-about {
+    background-color: #f0ece5;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Call to action section */
+.cta {
+    background-color: #f0ece5;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Responsive design for mobile screens */
+@media (max-width: 600px) {
+    /* Stack header elements vertically */
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Center navigation */
+    nav {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    /* Full width product cards */
+    .product-card, .product-item {
+        width: 100%;
+    }
+}
+/* Product card hover effect */
+.product-card:hover, .product-item:hover {
+    border-color: #7a8b6f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Image zoom on hover */
+.product-card img, .product-item img {
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover img, .product-item:hover img {
+    transform: scale(1.02);
+}
