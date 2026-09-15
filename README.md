@@ -2,7 +2,6 @@
 
 ## Student Information
 - **Name:** Rebecca Mojapelo
--
 - **Module:** Web Development (Introduction) – WEDE5020
 - **Part:** 2 – Designing the Visuals (CSS Styling and Responsive Design)
 
