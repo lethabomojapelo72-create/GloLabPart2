@@ -3,21 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO tags -->
+    <meta name="description" content="Browse GlowLab Beauty's range of natural skincare products, including Hydra Cream, Glow Serum, Calm Lotion and Charcoal Cleanser.">
+    <meta name="keywords" content="buy skincare online, Glow Serum, Hydra Cream, charcoal cleanser, South Africa">
     <title>GlowLab Beauty | Skincare Products</title>
-    <!-- Link to external stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Header section: contains the logo and main navigation -->
     <header>
         <div class="logo">
             <a href="index.html">
-                <img src="images/logo-placeholder.png" alt="GlowLab Beauty logo" width="150" height="auto">
+                <img src="images/logo-placeholder.png" alt="GlowLab Beauty logo" width="150">
             </a>
         </div>
-
-        <!-- Navigation bar: horizontal links to all pages -->
         <nav>
             <a href="index.html">Home</a> |
             <a href="about.html">About</a> |
@@ -27,54 +26,70 @@
         </nav>
     </header>
 
-    <!-- Main content area -->
     <main>
         <h1>Our Products</h1>
-        <p>Explore our range of natural, cruelty-free skincare. Each product is carefully crafted to nourish and protect your skin.</p>
+        <p>Explore our range of natural, cruelty-free skincare.</p>
 
-        <!-- Product catalog section: contains individual product articles -->
-        <section class="product-catalog">
+        <!-- Part 3: Search bar to filter products -->
+        <div class="search-container">
+            <label for="product-search">Search for a product:</label>
+            <input type="text" id="product-search" onkeyup="searchProducts()" placeholder="e.g., Serum, Cream...">
+        </div>
 
-            <!-- Product 1: Hydra Cream -->
+        <section class="product-catalog" id="catalog">
+            
+            <!-- Product 1 -->
             <article class="product-item">
-                <!-- Product image with descriptive alt text -->
-                <img src="images/hydra cream.webp" alt="Hydra Cream moisturizer jar" style="max-width:100%; height:auto;">
+                <img src="images/mapfura.png" alt="Hydra Cream moisturizer" style="max-width:100%; height:auto; cursor:pointer;" onclick="openLightbox(this.src)">
                 <h3>Hydra Cream</h3>
-                <p>A lightweight moisturizer that locks in hydration for 24 hours. Perfect for dry and sensitive skin.</p>
+                <p>A lightweight moisturizer that locks in hydration for 24 hours.</p>
                 <p><strong>Price:</strong> R299.00</p>
             </article>
 
-            <!-- Product 2: Glow Serum -->
+            <!-- Product 2 -->
             <article class="product-item">
-                <img src="images/glow.webp" alt="Glow Serum bottle" style="max-width:100%; height:auto;">
+                <img src="images/charcoal.png" alt="Glow Serum bottle" style="max-width:100%; height:auto; cursor:pointer;" onclick="openLightbox(this.src)">
                 <h3>Glow Serum</h3>
-                <p>Packed with Vitamin C and hyaluronic acid, this serum brightens dull skin and reduces dark spots.</p>
+                <p>Packed with Vitamin C and hyaluronic acid to brighten dull skin.</p>
                 <p><strong>Price:</strong> R399.00</p>
             </article>
 
-            <!-- Product 3: Charcoal Cleanser -->
+            <!-- Product 3 -->
             <article class="product-item">
-                <img src="images/charcoal cleanser.jpg" alt="Charcoal Cleanser tube" style="max-width:100%; height:auto;">
+                <img src="images/bd.png" alt="Calm Lotion bottle" style="max-width:100%; height:auto; cursor:pointer;" onclick="openLightbox(this.src)">
+                <h3>Calm Lotion</h3>
+                <p>A gentle, soothing lotion infused with aloe vera for redness.</p>
+                <p><strong>Price:</strong> R249.00</p>
+            </article>
+
+            <!-- Product 4 -->
+            <article class="product-item">
+                <img src="images/charcoal cleanser.jpg" alt="Charcoal Cleanser tube" style="max-width:100%; height:auto; cursor:pointer;" onclick="openLightbox(this.src)">
                 <h3>Charcoal Cleanser</h3>
-                <p>Deeply cleanses pores and removes impurities without stripping your skin's natural oils.</p>
+                <p>Deeply cleanses pores and removes impurities.</p>
                 <p><strong>Price:</strong> R199.00</p>
             </article>
 
         </section>
     </main>
 
-    <!-- Footer section: copyright and social media hyperlinks -->
+    <!-- Part 3: Lightbox popup. Hidden until an image is clicked -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" alt="Enlarged product view">
+    </div>
+
     <footer>
         <p>&copy; 2026 GlowLab Beauty. All rights reserved.</p>
         <p>
             Follow us:
-            <!-- Social links open in a new tab -->
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a> |
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a> |
-            <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer">TikTok</a> |
-            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">YouTube</a>
+            <a href="https://www.facebook.com/glowlabbeauty" target="_blank" rel="noopener noreferrer">Facebook</a> |
+            <a href="https://www.instagram.com/glowlabbeauty" target="_blank" rel="noopener noreferrer">Instagram</a> |
+            <a href="https://www.tiktok.com/@glowlabbeauty" target="_blank" rel="noopener noreferrer">TikTok</a> |
+            <a href="https://www.youtube.com/@glowlabbeauty" target="_blank" rel="noopener noreferrer">YouTube</a>
         </p>
     </footer>
 
+    <script src="js/script.js"></script>
 </body>
 </html>
